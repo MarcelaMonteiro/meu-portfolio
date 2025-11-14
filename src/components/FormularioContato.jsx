@@ -34,16 +34,16 @@ const FormularioContato = () => {
 	};
 
 	return (
-		<div className="min-h-screen w-full relative overflow-hidden flex justify-center items-start pt-32 px-4 bg-gradient-to-b from-[#0a0014] via-[#1b0035] to-[#090013] text-white">
+		<div className="min-h-screen w-full relative overflow-hidden flex justify-center items-center px-4 bg-gradient-to-b from-[#0a0014] via-[#1b0035] to-[#090013] text-white">
 			{/* ... suas nebulosas */}
 
-			<div className="relative z-10 w-[800px] flex items-center justify-center gap-6">
-				<span className="text-white text-[150px] opacity-40 font-bold">
+			<div className="relative z-10 w-full max-h-[1px] p-4 md:p-10 md:max-w-[800px] md:p-8 flex items-center justify-center gap-6">
+				<span className="text-white text-[150px] opacity-40 font-bold animate-bracket">
 					{"{"}
 				</span>
 
 				{/* CARD */}
-				<div className="relative w-full max-w-md px-8 py-10 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl">
+				<div className="relative w-full max-w-md px-8 py-10  bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl">
 					<h1 className="text-center text-2xl font-bold mb-8">
 						✨ Entre em Contato ✨
 					</h1>
@@ -127,12 +127,12 @@ const FormularioContato = () => {
 					{/* emoji */}
 					<img
 						src={fotinho}
-						className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-40"
+						className="animate-float absolute -bottom-32 left-1/2 -translate-x-1/2 w-40"
 						alt=""
 					/>
 				</div>
 
-				<span className="text-white text-[150px] opacity-40 font-bold">
+				<span className="text-[150px] opacity-40 font-bold animate-bracket">
 					{"}"}
 				</span>
 			</div>
