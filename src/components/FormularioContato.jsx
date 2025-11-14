@@ -38,13 +38,13 @@ const FormularioContato = () => {
 			{/* ... suas nebulosas */}
 
 			<div className="relative z-10 w-full max-h-[1px] p-4 md:p-10 md:max-w-[800px] md:p-8 flex items-center justify-center gap-6">
-				<span className="text-white text-[150px] opacity-40 font-bold animate-bracket">
+				<span className="text-white md:text-[150px] text-[50px] opacity-40 font-bold animate-bracket">
 					{"{"}
 				</span>
 
 				{/* CARD */}
 				<div className="relative w-full max-w-md px-8 py-10  bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl">
-					<h1 className="text-center text-2xl font-bold mb-8">
+					<h1 className="text-center md:text-2xl text-1xl font-bold mb-8">
 						✨ Entre em Contato ✨
 					</h1>
 
@@ -132,7 +132,7 @@ const FormularioContato = () => {
 					/>
 				</div>
 
-				<span className="text-[150px] opacity-40 font-bold animate-bracket">
+				<span className="md:text-[150px] text-[50px] opacity-40 font-bold animate-bracket">
 					{"}"}
 				</span>
 			</div>
