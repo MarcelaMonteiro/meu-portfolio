@@ -37,13 +37,13 @@ const FormularioContato = () => {
 		<div className="min-h-screen w-full relative overflow-hidden flex justify-center items-center px-4 bg-gradient-to-b from-[#0a0014] via-[#1b0035] to-[#090013] text-white">
 			{/* ... suas nebulosas */}
 
-			<div className="relative z-10 w-full max-h-[1px] p-4 md:p-10 md:max-w-[800px] md:p-8 flex items-center justify-center gap-6">
+			<div className="relative z-10 w-full  p-4 md:p-10 md:max-w-[800px] md:p-8 flex items-center justify-center gap-6">
 				<span className="text-white md:text-[150px] text-[50px] opacity-40 font-bold animate-bracket">
 					{"{"}
 				</span>
 
 				{/* CARD */}
-				<div className="relative w-full max-w-md px-8 py-10  bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl">
+				<div className="relative w-full max-w-md md:px-8 md:py-10 px-5 py-5 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl">
 					<h1 className="text-center md:text-2xl text-1xl font-bold mb-8">
 						✨ Entre em Contato ✨
 					</h1>
@@ -51,7 +51,7 @@ const FormularioContato = () => {
 					{/* FORM QUE FUNCIONA */}
 					<form
 						onSubmit={handleSubmit(onSubmit)}
-						className="space-y-4 text-gray-900"
+						className="space-y-5 text-gray-900"
 					>
 						{/* NOME */}
 						<div>
@@ -62,13 +62,15 @@ const FormularioContato = () => {
 									required: "Digite seu nome.",
 									minLength: { value: 10, message: "Mínimo de 10 caracteres." },
 								})}
-								className={`w-full px-4 py-3 rounded-lg bg-white/70 
+								className={` w-full px-4 md:py-3 px-2 py-2 rounded-lg bg-white/70 
                 ${
 									errors.nome ? "border border-red-500" : "border-transparent"
 								}`}
 							/>
 							{errors.nome && (
-								<p className="text-red-300">{errors.nome.message}</p>
+								<p className="text-red-300 md:text-base text-sm mt-1">
+									{errors.nome.message}
+								</p>
 							)}
 						</div>
 
@@ -85,13 +87,15 @@ const FormularioContato = () => {
 										message: "E-mail inválido.",
 									},
 								})}
-								className={`w-full px-4 py-3 rounded-lg bg-white/70 
+								className={`w-full px-4  md:py-3 px-2 py-2 rounded-lg bg-white/70 
                 ${
 									errors.email ? "border border-red-500" : "border-transparent"
 								}`}
 							/>
 							{errors.email && (
-								<p className="text-red-300">{errors.email.message}</p>
+								<p className="text-red-300 md:text-base text-sm mt-1">
+									{errors.email.message}
+								</p>
 							)}
 						</div>
 
@@ -104,7 +108,7 @@ const FormularioContato = () => {
 									required: "Digite sua mensagem.",
 									minLength: { value: 10, message: "Mínimo de 10 caracteres." },
 								})}
-								className={`w-full px-4 py-3 rounded-lg bg-white/70 resize-none 
+								className={`w-full px-4 md:py-3 px-2 py-2 rounded-lg bg-white/70 resize-none 
                 ${
 									errors.mensagem
 										? "border border-red-500"
@@ -112,13 +116,15 @@ const FormularioContato = () => {
 								}`}
 							></textarea>
 							{errors.mensagem && (
-								<p className="text-red-300">{errors.mensagem.message}</p>
+								<p className="text-red-300 md:text-base text-sm mt-1">
+									{errors.mensagem.message}
+								</p>
 							)}
 						</div>
 
 						<button
 							type="submit"
-							className="cursor-pointer w-full py-3 mt-2 font-semibold text-white rounded-lg bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 shadow-lg hover:shadow-xl transition"
+							className="cursor-pointer w-full md:py-3 py-2 md:mt-2 font-semibold text-white rounded-lg bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 shadow-lg hover:shadow-xl transition"
 						>
 							Enviar Mensagem
 						</button>

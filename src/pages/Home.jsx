@@ -186,7 +186,7 @@ const Home = () => {
                           animate-bounce
                         "
 											>
-												<a href="#entrecontato">⮟</a>
+												<a href="#entrecontato">▾</a>
 											</span>
 										</div>
 									</>
