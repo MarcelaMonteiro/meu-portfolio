@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap");
+
+@import "tailwindcss";
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeSlide {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fade-slide {
+	animation: fadeSlide 0.5s ease forwards;
+}
+
+.animate-float {
+	animation: float 3s ease-in-out infinite;
+}
+@keyframes bracketPulse {
+	0% {
+		transform: translateY(0) scale(1);
+		opacity: 0.4;
+	}
+	50% {
+		transform: translateY(-4px) scale(1.03);
+		opacity: 0.55;
+	}
+	100% {
+		transform: translateY(0) scale(1);
+		opacity: 0.4;
+	}
+}
+
+.animate-bracket {
+	animation: bracketPulse 4s ease-in-out infinite;
+}
+body {
+	@apply bg-[radial-gradient(circle_at_bottom_center,_rgb(141,118,197),_rgb(119,60,147))];
+	min-height: 100vh;
+}
